@@ -1,31 +1,93 @@
+/*----------------------------------------------------------------------------------------------------
+MAJOR TAGS
+----------------------------------------------------------------------------------------------------*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*----------------------------------------------------------------------------------------------------
+I need to figure out what ClearFix is.
+----------------------------------------------------------------------------------------------------*/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
 
+/*----------------------------------------------------------------------------------------------------
+SINGLE TAGS
+----------------------------------------------------------------------------------------------------*/
+
 h1 {
   color: rgb(0, 0, 0);
-  font-size: 40px;
+  font-size: 55px;
   margin-bottom: 20px;
 }
 
 h2 {
-  color: rgb(192, 192, 192);
+  color: rgb(0, 0, 0);
   font-size: 30px;
   margin-bottom: 10px;
 }
 
 h3 {
-  color: rgb(34, 139, 34);
+  color: rgb(0, 0, 0);
   font-size: 20px;
   margin-bottom: 10px;
 }
+
+/*----------------------------------------------------------------------------------------------------
+SINGLE CLASSES
+----------------------------------------------------------------------------------------------------*/
+
+.links {
+  padding: 0 0 30px 0;
+}
+
+.learning {
+  padding: 0 0 30px 0;
+}
+
+.title {
+}
+
+/*----------------------------------------------------------------------------------------------------
+CONTAINER CLASSES
+----------------------------------------------------------------------------------------------------*/
+
+.container {
+  width: 960px;
+  margin: 20px auto 0 auto;
+}
+
+.blog_post {
+  width: 75%;
+  float: left;
+  padding-right: 50px;
+}
+
+.extra_content {
+  width: 25%;
+  float: right;
+}
+
+.author {
+  border-top: 3px solid black;
+  padding: 15px;
+}
+
+/*----------------------------------------------------------------------------------------------------
+CLASSES INSIDE OF CONTAINERS
+----------------------------------------------------------------------------------------------------*/
 
 .blog_text {
   text-align: justify;
@@ -34,21 +96,4 @@ h3 {
 
 .author_name {
   font-size: 20px;
-}
-
-.container {
-  width: 960px;
-  margin: 0 auto 0 auto;
-}
-
-.blog_post {
-  background-color: rgb(224, 100, 100);
-}
-
-.links {
-  background-color: rgb(46, 139, 87);
-}
-
-.author {
-  background-color: rgb(135, 207, 235);
 }
